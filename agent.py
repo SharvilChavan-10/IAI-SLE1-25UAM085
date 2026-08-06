@@ -10,6 +10,8 @@ def chatbot_response(user_input):
         return "Goodbye! Have a great day!"
     else:
         return "I'm not sure how to respond to that. Can you please rephrase?"
+    elif "thank you" in user_input.lower():
+    return "You're welcome!"    
 
 
 def main():
