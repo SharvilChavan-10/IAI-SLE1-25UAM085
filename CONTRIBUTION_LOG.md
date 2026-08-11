@@ -119,7 +119,69 @@ Requirements:
 - Verified that the existing commands still work.
 
 ---
+---
 
+# Step 5 - Added Task Manager Agent Capability
+
+### Prompt Given to GitHub Copilot
+
+I have a beginner-friendly Python rule-based chatbot.
+
+I want to add a simple task manager capability to make it more agent-like.
+
+Requirements:
+
+- `"add task <task>"` should add a task to an in-memory Python list.
+- `"show tasks"` should display all tasks.
+- `"complete task <number>"` should mark a task as completed.
+- Store task information using a simple Python data structure.
+- Handle invalid task numbers without crashing.
+- Use only Python standard features.
+- Do not use `eval()`.
+- Do not remove my existing chatbot features.
+- Keep the code beginner-friendly.
+- Explain exactly what code was added and where it should be placed.
+
+### AI Contribution
+
+- Suggested an in-memory task list for storing tasks.
+- Generated the task addition logic.
+- Generated the task display logic.
+- Generated the task completion logic.
+- Added validation for invalid task numbers.
+- Suggested changing the task conditions to an `if-elif` chain so that the final fallback response does not execute before the task commands.
+
+### My Contribution
+
+- Reviewed the Copilot-generated code.
+- Checked the task-management logic.
+- Tested adding a task.
+- Tested displaying tasks.
+- Tested completing a task.
+- Tested invalid task numbers.
+- Verified that the existing chatbot features continue to work.
+- Accepted and modified the Copilot suggestion where necessary.
+
+### Testing
+
+Example commands tested:
+
+```text
+You: add task Study Python
+Bot: Added task: Study Python
+
+You: show tasks
+Bot: 1. Study Python
+
+You: complete task 1
+Bot: Task 1 completed: Study Python
+```
+
+### Result
+
+The chatbot was extended with a basic task-management capability. It can receive a task-related command, identify the requested action, modify its internal task list, and provide a response to the user.
+
+This makes the project a basic rule-based conversational agent rather than only a fixed-response chatbot.
 # Reflection
 
 GitHub Copilot Chat was used as a coding assistant during the development of this project. It helped generate functions, conditions, loops, and chatbot responses based on my prompts.
