@@ -1,7 +1,7 @@
 # AI Contribution Log - SLE -1
-PRN:-25UAM085
-Name:-Chavan Sharvil Sudhakar 
-Date:- 10-08-2026
+- PRN:-25UAM085
+- Name:-Chavan Sharvil Sudhakar 
+- Date:- 10-08-2026
 ## Course
 
 **02UAML204 - Introduction to Artificial Intelligence**
